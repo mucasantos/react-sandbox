@@ -11,19 +11,19 @@ function Todo() {
             .then((res) => res.json())
             .then((data) => {
                 setTimeout(() => {
-                    if (isMounted){
+                    if (isMounted) {
                         setTodo(data)
-                    setLoading(false)
+                        setLoading(false)
                     }
                 }, 3000)
             })
 
-            return ()=>{
-isMounted.current = false
-            }
+        return () => {
+            isMounted.current = false
+        }
     }, [isMounted])
 
-    return  loading ?<h3>Loading</h3> : <h1>{todo.title}</h1>
+    return loading ? <h3>Loading</h3> : <h1>{todo.title}</h1>
 }
 
 export default Todo
