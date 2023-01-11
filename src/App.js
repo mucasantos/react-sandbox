@@ -1,10 +1,13 @@
-import UserRefExample1 from "./components/UserRefExample1";
+import UseRefExample1 from "./components/UseRefExample1";
+import UseRefExample2 from "./components/UseRefExample2";
 
 
 function App() {
   return (
     <div className="cotnainer mt-5">
-      <UserRefExample1></UserRefExample1>
+      <UseRefExample1></UseRefExample1>
+      <UseRefExample2></UseRefExample2>
+
     </div>
   );
 }
